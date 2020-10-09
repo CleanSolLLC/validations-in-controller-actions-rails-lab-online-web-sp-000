@@ -11,7 +11,11 @@ class PostsController < ApplicationController
     if @post.update(post_params)
       redirect_to post_path(@post)
     else
+<<<<<<< HEAD
       @post.errors
+=======
+      @post.errors[:title].join
+>>>>>>> c7c809be7b18dd0aabbbe423efa9c763a754d12b
       render :edit
     end
   end
